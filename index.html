@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a1020">
+<meta name="description" content="Nadeem Ahmed's portfolio showcasing data analytics, data science projects, skills and certifications.">
+<title>Nadeem Ahmed | Data Analytics Portfolio</title>
+<style>
+:root{--bg:#090f1f;--panel:#111a2e;--text:#f5f7ff;--muted:#a8b3ca;--purple:#a397ff;--teal:#62e7d2;--line:rgba(255,255,255,.11)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,90%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(9,15,31,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-size:21px;font-weight:850;letter-spacing:-1px}.logo span{color:var(--teal)}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{font-size:12px;color:var(--muted)}.navlinks a:hover{color:var(--teal)}
+.hero{padding:94px 0 82px;background:radial-gradient(ellipse at 80% 12%,rgba(115,91,255,.22),transparent 42%),radial-gradient(ellipse at 8% 80%,rgba(49,208,183,.10),transparent 38%)}
+.eyebrow{color:var(--teal);text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}
+.pill{display:inline-block;margin:0 0 22px;padding:7px 13px;border-radius:30px;border:1px solid rgba(163,151,255,.4);background:rgba(163,151,255,.09);color:#d6d0ff;font-size:12px}
+h1{font-size:clamp(42px,8vw,78px);line-height:1.08;letter-spacing:-3px;max-width:850px}
+.gradient{background:linear-gradient(100deg,var(--purple),var(--teal));color:transparent;background-clip:text;-webkit-background-clip:text}
+.hero p{max-width:650px;color:var(--muted);margin:24px 0 28px;font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:750;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--purple)}
+.btn.primary{background:var(--purple);border-color:var(--purple);color:#101326}
+section{padding:70px 0}
+h2{font-size:clamp(28px,5vw,42px);letter-spacing:-1.2px;margin:8px 0 13px}
+.lead{max-width:700px;color:var(--muted)}
+.grid{display:grid;gap:16px;margin-top:27px}
+.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{min-width:0;padding:23px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:rgba(163,151,255,.55)}
+.card h3{font-size:17px;margin-bottom:9px}.card p{font-size:13px;color:var(--muted)}
+.skill{text-align:center;padding:19px 8px}.skill .icon{display:block;font-size:25px;margin-bottom:7px}.skill h3{font-size:13px;margin:0}
+.project-no{font-size:11px;color:var(--purple);font-weight:800;letter-spacing:1px}
+.metrics{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.metric{background:rgba(98,231,210,.08);border:1px solid rgba(98,231,210,.18);border-radius:8px;padding:7px 9px;font-size:11px;color:#a8f7e9}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tag{font-size:10px;padding:4px 8px;border-radius:5px;background:rgba(163,151,255,.12);color:#d5ceff}
+.status{display:inline-block;margin-top:13px;font-size:10px;color:var(--teal);background:rgba(98,231,210,.08);padding:4px 8px;border-radius:5px}
+.note{font-size:12px;color:var(--muted);margin-top:17px}
+.cert{display:flex;gap:14px;align-items:flex-start}.cert-icon{font-size:25px}
+.contact{padding:32px;border:1px solid rgba(163,151,255,.35);border-radius:20px;background:radial-gradient(ellipse at top right,rgba(115,91,255,.16),transparent 62%),var(--panel)}
+footer{border-top:1px solid var(--line);padding:23px 0;color:var(--muted);font-size:12px}
+.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.nav{padding:13px 0}.navlinks{gap:12px}.hero{padding:68px 0}.three,.two{grid-template-columns:1fr}.four{grid-template-columns:repeat(2,minmax(0,1fr))}h1{letter-spacing:-1.5px}.contact{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn{transition:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#home">NA<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <span class="pill">B.Sc. Data Science · Internship Portfolio</span>
+    <h1>Turning data into<br><span class="gradient">meaningful insights.</span></h1>
+    <p>Hi, I'm <strong>Nadeem Ahmed</strong>, a B.Sc. Data Science student interested in data analytics, business intelligence and machine learning. I enjoy exploring datasets, identifying patterns and presenting insights that can support better decisions.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore my work ↓</a>
+      <a class="btn" href="#contact">Connect with me ↗</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="eyebrow">01 / About me</div>
+    <h2>Curious about data. Focused on impact.</h2>
+    <p class="lead">I am pursuing a B.Sc. in Data Science at SHETH NKTT COLLEGE OF COMMERCE AND SHETH JTT COLLEGE OF ARTS, affiliated with Mumbai University. I am building practical skills through academic work, hands-on analysis and projects.</p>
+    <div class="grid two">
+      <article class="card"><h3>🎓 Education</h3><p>B.Sc. Data Science · Third Year<br>Mumbai University</p></article>
+      <article class="card"><h3>🎯 Career objective</h3><p>Seeking a Data Analyst or Data Science internship where I can apply my skills, contribute to real projects and learn from an experienced team.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow">02 / Technical skills</div>
+    <h2>Tools I work with.</h2>
+    <p class="lead">A practical toolkit for cleaning, analyzing, visualizing and interpreting data. Keep this list aligned with what you can demonstrate in an interview.</p>
+    <div class="grid four">
+      <div class="card skill"><span class="icon">🐍</span><h3>Python</h3></div>
+      <div class="card skill"><span class="icon">🗄️</span><h3>SQL</h3></div>
+      <div class="card skill"><span class="icon">📊</span><h3>Power BI</h3></div>
+      <div class="card skill"><span class="icon">📈</span><h3>Excel</h3></div>
+      <div class="card skill"><span class="icon">🐼</span><h3>Pandas</h3></div>
+      <div class="card skill"><span class="icon">🔢</span><h3>NumPy</h3></div>
+      <div class="card skill"><span class="icon">📉</span><h3>Matplotlib</h3></div>
+      <div class="card skill"><span class="icon">🧠</span><h3>Machine Learning</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="eyebrow">03 / Featured projects</div>
+    <h2>Projects with a purpose.</h2>
+    <p class="lead">This section is designed to grow as you add project reports, screenshots, datasets and source-code links.</p>
+    <div class="grid two">
+      <article class="card">
+        <div class="project-no">FEATURED PROJECT · 01</div>
+        <h3 style="margin-top:9px">Product Demand Forecasting & Inventory Optimization</h3>
+        <p>Academic project using historical product data to forecast demand and explore inventory planning. The Random Forest model was evaluated using R², MAE and RMSE.</p>
+        <div class="metrics"><span class="metric">R² · 0.8664</span><span class="metric">MAE · 13.3177</span><span class="metric">RMSE · 17.7337</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span></div>
+        <p class="note">Add the repository, report and dashboard links when ready. Explain the evaluation method and limitations in the project report.</p>
+      </article>
+      <article class="card">
+        <div class="project-no">PROJECT SLOT · 02</div>
+        <h3 style="margin-top:9px">Exploratory Data Analysis</h3>
+        <p>Showcase a completed analysis with data cleaning, missing-value checks, descriptive statistics, visualizations and clear findings.</p>
+        <span class="status">Add completed project</span>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Visualization</span></div>
+      </article>
+      <article class="card">
+        <div class="project-no">PROJECT SLOT · 03</div>
+        <h3 style="margin-top:9px">Sales Analytics Dashboard</h3>
+        <p>Present sales KPIs, revenue trends and product performance in an Excel or Power BI dashboard.</p>
+        <span class="status">Add when completed</span>
+        <div class="tags"><span class="tag">Excel</span><span class="tag">Power BI</span><span class="tag">KPIs</span></div>
+      </article>
+      <article class="card">
+        <div class="project-no">PROJECT SLOT · 04</div>
+        <h3 style="margin-top:9px">SQL Business Analysis</h3>
+        <p>Answer business questions using SQL filters, joins, aggregations, subqueries and CTEs, then document the findings.</p>
+        <span class="status">Add when completed</span>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">Analysis</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="container">
+    <div class="eyebrow">04 / Certifications</div>
+    <h2>Learning and credentials.</h2>
+    <div class="grid two">
+      <article class="card cert"><span class="cert-icon">🏅</span><div><h3>Deloitte Data Analyst</h3><p>Completed certificate. Add a verified credential link or certificate file when available.</p></div></article>
+      <article class="card cert"><span class="cert-icon">📊</span><div><h3>TATA GenAI Powered Data Analytics</h3><p>Completed Forage job simulation. Add the verified certificate link when available.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow">05 / Contact</div>
+    <div class="contact">
+      <h2>Let's connect.</h2>
+      <p class="lead">Open to relevant internship opportunities, collaborative projects and learning from people working with data.</p>
+      <div class="actions" style="margin-top:23px">
+        <a class="btn primary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a>
+      </div>
+      <p class="note">Before publishing, replace the generic profile links and YOUR_EMAIL@example.com with your own details.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-row"><span>© <span id="year"></span> Nadeem Ahmed</span><span>Data Analytics & Data Science Portfolio</span></div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
